@@ -1,3 +1,2 @@
-Desafio para exercitar os fundamentos da linguagem e noções de regras de estruta de sintaxe aprendidas no curso "Aprendendo a sintaxe Java" do bootcamp Santander 2024 - Backend com Java
+Repositório para os exercicios e desafio do bootcamp Santander 2024 - Backend com Java da [DIO](https://www.dio.me/)
 
-Saiba mais em: https://github.com/digitalinnovationone/trilha-java-basico/tree/main/desafios/sintaxe
