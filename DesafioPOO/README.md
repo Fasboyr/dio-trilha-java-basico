@@ -1,18 +1,36 @@
-## Getting Started
+Desafio para exercitar os de POO e UML aprendidos na trilha "Programação Orientado a Objetos com Java" do bootcamp Santander 2024 - Backend com Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Saiba mais em: [https://github.com/digitalinnovationone/trilha-java-basico/tree/main/desafios/sintaxe](https://github.com/digitalinnovationone/trilha-java-basico/blob/main/desafios/poo/README.md)
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+```mermaid
+classDiagram
+    class ReprodutorMusical {
+        <<interface>> 
+        +tocar()
+        +pausar()
+        +selecionarMusica(String "Gangnam Style")
+    }
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+    class AparelhoTelefonico {
+        <<interface>> 
+        +ligar(String "123456789")
+        +atender()
+        +iniciarCorreioVoz()
+    }
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    class NavegadorInternet {
+        <<interface>> 
+        +exibirPagina(String "youtube.com")
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
 
-## Dependency Management
+    class IPhone {
+    }
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    IPhone --> ReprodutorMusical
+    IPhone --> AparelhoTelefonico
+    IPhone --> NavegadorInternet
+```
